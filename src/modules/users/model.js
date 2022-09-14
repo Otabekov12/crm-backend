@@ -23,13 +23,13 @@ class UsersModel extends PG {
     }
     
     getStudents(){
-        return this.fetch(`SELECT * FROM users WHERE role = 'students'`)
+        return this.fetch(`SELECT * FROM users WHERE role = 'student'`)
     }
     
     
     // CREATE
     
-    newUser(name, surname, userphone, password, course, role){
+    newUser(name, surname, user_phone, password, course, role){
         return this.fetch(
             `
             INSERT INTO users(
@@ -40,7 +40,7 @@ class UsersModel extends PG {
                 course,
                 role
                 )VALUES($1, $2, $3, $4, $5, $6) RETURNING*
-                `, name, surname, userphone, password, course, role)
+                `, name, surname, user_phone, password, course, role)
             }
             
             // DELETE 

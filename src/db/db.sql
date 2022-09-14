@@ -37,6 +37,10 @@ CREATE TABLE courses (
 insert into users (name, surname,   user_phone, password, course, role) values ('Gani', 'Furqat',  40000, 226198, 'VUE', 'student');
 insert into courses (course_name,   course_discription , course_price) values ('1c', 'wfwaearf',  700000);
 
+insert into users (name, surname,   user_phone, password, course, role) values ('Umar', 'Soliyev',  99833121, 22623, 'JS', 'student');
+insert into users (name, surname,   user_phone, password, course, role) values ('Jamshid', 'Agzamov',  99253134, 22357, 'JS', 'teacher');
+insert into users (name, surname,   user_phone, password,  role) values ('Nodir', 'Ibragimov',  99253249, 22429,  'admin');
+
 -- groups
 
 CREATE TABLE groups(
