@@ -18,8 +18,8 @@ class CoursesController {
     // DELETE
     
     
-    async deleteCourses(_, res){
-        const { id } = res.params
+    async deleteCourses(req, res){
+        const { id } = req.params
         res.json(await model.deleteCourses(id))
     }
     
