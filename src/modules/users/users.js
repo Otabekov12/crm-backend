@@ -73,3 +73,8 @@ async getStudentsGroup(req, res){
 }
 
 module.exports = new UsersController()
+
+// 513d9e83-506b-4477-ae2e-11f2185f7312 student
+
+
+// e0c52e06-0dee-4ba0-9cf8-88e50fb506fd kurs

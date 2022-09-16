@@ -10,7 +10,7 @@ class GroupsModel extends PG {
     
     // CREATE
     
-    newGroups(group_name){
+    newGroups(group_name, user_id, course_id){
         return this.fetch(
             ` INSERT INTO groups(group_name, user_id, course_id)VALUES($1, $2, $3)RETURNING* `
             , group_name, user_id, course_id)

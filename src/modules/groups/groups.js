@@ -14,8 +14,8 @@ class GroupsController {
     
 
     async newGroups(req, res){
-        const { group_name} = req.body
-        res.json(await model.newGroups(group_name))
+        const { group_name, user_id, course_id} = req.body
+        res.json(await model.newGroups(group_name, user_id, course_id))
     }
 
 
